@@ -1,0 +1,192 @@
+.navbar {
+  // opacity: 0.5;
+  font-family: $font-1;
+  padding-top: 20px;
+  margin: -20px 0 0;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  .id {
+    text-align: center;
+
+    .idContent {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .title {
+        margin: 0 auto;
+        display: inline-flex;
+
+        .name {
+          max-width: 500px;
+          margin: auto;
+        }
+
+        top: 60px;
+        .logo {
+          margin: auto;
+
+          img {
+            border-radius: 10px;
+            width: 130px;
+          }
+        }
+      }
+
+      .motto {
+        height: 50px;
+        width: 650px;
+        margin: 20px auto 0;
+        position: relative;
+        background: linear-gradient(white, green);
+        border-radius: $borderRadius;
+        display: flex;
+
+        justify-content: center;
+        overflow: hidden;
+        h2 {
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+          color: white;
+          margin: auto 0;
+          animation: defilement-rtl 10s infinite linear;
+        }
+      }
+    }
+
+    @keyframes defilement-rtl {
+      0% {
+        transform: translate3d(100%, 0, 0); /* position initiale à droite */
+      }
+      100% {
+        transform: translate3d(-100%, 0, 0); /* position finale à gauche */
+      }
+    }
+  }
+
+  .navigation {
+    // grid-area: 2;
+    padding: 0;
+
+    ul {
+      margin: 0 auto;
+      height: 100%;
+      @include verticalCenter;
+      li {
+        padding: 1rem 0 1rem 0.4rem;
+        font-size: 1.3rem;
+        position: relative;
+        &:hover i {
+          transform: translate(3px, 3px);
+        }
+
+        a {
+          color: white;
+          margin-left: 1.7rem;
+        }
+
+        i {
+          position: absolute;
+          font-size: 0.95rem;
+          transform: translateY(3px);
+          transition: 0.2s ease;
+        }
+        span {
+          margin-left: 1.5rem;
+          font-size: 1.5rem;
+        }
+
+        /* Dropdown Button */
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          // position: absolute;
+          display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          border-radius: 10px;
+          position: absolute;
+          background-color: white;
+          overflow: hidden;
+          transition: 1s all;
+          height: 0;
+           z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          margin: 0;
+          text-decoration: none;
+          display: block;
+          border-radius: 10px;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          height: 170px;
+          position: static;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .sidebar {
+    display: flex;
+    min-height: 50px;
+    margin-bottom: 0.2rem;
+    width: 100%;
+
+    .id,
+    .socialNetwork {
+      display: none;
+    }
+
+    .navigation {
+      width: 100%;
+      padding: 0.1rem 1rem;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          margin-left: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sidebar {
+    ul {
+      justify-content: space-around !important;
+
+      li {
+        padding: 1rem 0 !important;
+      }
+
+      i {
+        font-size: 1.4rem !important;
+        transform: translateY(-3px) !important;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
