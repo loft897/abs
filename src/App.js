@@ -11,7 +11,7 @@ import PhotoLibrary from "./pages/Components/activities/PhotoLibrary";
 import Sports from "./pages/Components/activities/Sports";
 import Workshops from "./pages/Components/activities/Workshops";
 import AdmissionFile from "./pages/Components/admission/AdmissionFile";
-import TermsConditionsFees from "./pages/Components/admission/TermsConditionsFees";
+import Fees from "./pages/Components/admission/Fees";
 import Mentions from "./pages/Mentions";
 
 const App = () => {
@@ -52,7 +52,7 @@ const App = () => {
           <Route
             exact
             path="/admission/fees"
-            element={<TermsConditionsFees />}
+            element={<Fees />}
           ></Route>
           <Route
             exact

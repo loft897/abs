@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div>
       <Navigation />
-      <div className="format">
+      <div className="aboutUs">
         <div className="history">
           <h2><span>qui sômmes-nous?</span></h2>
           <br />

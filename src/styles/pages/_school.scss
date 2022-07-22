@@ -1,39 +1,7 @@
-.format,
+.aboutUs,
 .organizationChart,
 .moreInfos {
-  max-width: 1200px;
-  margin: 20px auto;
-  background-color: $lightYellow;
-  color: black;
-  border-radius: $borderRadius;
-  padding: 10px;
-  p {
-    font-size: 1.2rem;
-  }
-  span {
-    text-transform: uppercase;
-  }
-  h2 {
-    text-align: center;
-    text-decoration: underline;
-    // font-size: 1.8em;
-    animation: translate 2s ease infinite;
-  }
-
-  @keyframes translate {
-    0% {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-    }
-    50% {
-      -webkit-transform: translate(0, 10px);
-      transform: translate(10px, 10px);
-    }
-    100% {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-    }
-  }
+  @include default;
 }
 
 .organizationChart {

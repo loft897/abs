@@ -42,7 +42,7 @@ const FootPage = () => {
         </NavLink>
       </div>
       <div className="allLinks">
-        <div className="aboutUs">
+        <div className="about">
           <NavLink excact to="/school/aboutus">
           À propos de nous
           </NavLink>
@@ -77,7 +77,7 @@ const FootPage = () => {
             Modalités d'admission
           </NavLink>
         </div>
-        <div className="fees">
+        <div className="schoolFees">
           <NavLink excact to="/admission/fees">
             Modalités et frais
           </NavLink>
