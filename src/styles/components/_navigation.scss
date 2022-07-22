@@ -38,7 +38,7 @@
         width: 650px;
         margin: 20px auto 0;
         position: relative;
-        background: linear-gradient(white, green);
+      background: linear-gradient(to left, white, green);
         border-radius: $borderRadius;
         display: flex;
 
@@ -48,7 +48,7 @@
           font-size: 1.3rem;
           text-transform: uppercase;
           letter-spacing: 0.2rem;
-          color: white;
+          color: black;
           margin: auto 0;
           animation: defilement-rtl 10s infinite linear;
         }
@@ -88,7 +88,8 @@
 
         i {
           position: absolute;
-          font-size: 0.95rem;
+          margin-top: 0.2rem;
+          font-size: 1rem;
           transform: translateY(3px);
           transition: 0.2s ease;
         }
