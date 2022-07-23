@@ -12,7 +12,7 @@ const Fees = () => {
           <span>frais et conditions de paiement</span>
         </h2>
         <h3>
-          <span>Inscriptions</span> : 20.000 Fcfa pour toutes les classes.
+          <span>Inscription</span> : 20.000 Fcfa pour toutes les classes.
         </h3>
         <div className="prices">
           <div class="cell">

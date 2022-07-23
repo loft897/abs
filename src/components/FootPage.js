@@ -83,7 +83,7 @@ const FootPage = () => {
           </NavLink>
         </div>
       </div>
-      <div className="contact">
+      <div className="contacts">
         <i class="fas fa-phone"></i>
         <a href="tel:+237677316366">(+)237 677 316 366</a>
         <NavLink excact to="/contact">
