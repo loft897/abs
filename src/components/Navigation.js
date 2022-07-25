@@ -48,7 +48,7 @@ const Navigation = () => {
             >
               <i class="fas fa-school"></i>
               <div class="dropdown">
-                <span>Etablissemnt</span>
+                <span>Etablissement</span>
                 <div class="dropdown-content">
                   <NavLink excact to="/school/aboutus">
                     À propos de nous
@@ -78,9 +78,6 @@ const Navigation = () => {
                 <div class="dropdown-content">
                   <NavLink excact to="/activities/workshops">
                     Ateliers
-                  </NavLink>
-                  <NavLink exact to="/activities/sports">
-                    Activtés sportives
                   </NavLink>
                   <NavLink exact to="/activities/gallery">
                     Phototèque
@@ -128,31 +125,6 @@ const Navigation = () => {
         </ul>
       </div>
 
-      {/* <div className="socialNetwork">
-        <ul>
-          <li>
-            <a
-              href="https://www.google.fr"
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.google.fr"
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div className="signature">
-        <p>Copyright © Awae BS - 2022</p>
-      </div> */}
     </div>
   );
 };

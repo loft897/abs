@@ -62,11 +62,7 @@ const FootPage = () => {
             Ateliers
           </NavLink>
         </div>
-        <div className="sports">
-          <NavLink excact to="/activities/sports">
-            Activités sportives
-          </NavLink>
-        </div>
+        
         <div className="gallery">
           <NavLink excact to="/activities/gallery">
             Galerie photos

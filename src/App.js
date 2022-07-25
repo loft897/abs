@@ -8,7 +8,7 @@ import AboutUs from "./pages/Components/school/AboutUs";
 import OrganizationChart from "./pages/Components/school/OrganizationChart";
 import More from "./pages/Components/school/More";
 import PhotoLibrary from "./pages/Components/activities/PhotoLibrary";
-import Sports from "./pages/Components/activities/Sports";
+// import Sports from "./pages/Components/activities/Sports";
 import Workshops from "./pages/Components/activities/Workshops";
 import AdmissionFile from "./pages/Components/admission/AdmissionFile";
 import Fees from "./pages/Components/admission/Fees";
@@ -37,7 +37,7 @@ const App = () => {
             path="/activities/workshops"
             element={<Workshops />}
           ></Route>
-          <Route exact path="/activities/sports" element={<Sports />}></Route>
+          {/* <Route exact path="/activities/sports" element={<Sports />}></Route> */}
           <Route
             exact
             path="/activities/gallery"
@@ -49,16 +49,8 @@ const App = () => {
             path="/admission/file"
             element={<AdmissionFile />}
           ></Route>
-          <Route
-            exact
-            path="/admission/fees"
-            element={<Fees />}
-          ></Route>
-          <Route
-            exact
-            path="/mentions"
-            element={<Mentions />}
-          ></Route>
+          <Route exact path="/admission/fees" element={<Fees />}></Route>
+          <Route exact path="/mentions" element={<Mentions />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

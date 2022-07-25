@@ -1,0 +1,22 @@
+.notFound {
+  @include default;
+  height: 95vh;
+  max-width: 1200px;
+  border-radius: $borderRadius;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  a {
+    padding: 1rem 2rem;
+    border-radius: $borderRadius;
+    background: linear-gradient(to left, white, green);
+    transition: 0.2s;
+
+    &:hover {
+      background: $color-4;
+    }
+  }
+}

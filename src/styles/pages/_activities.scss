@@ -1,0 +1,117 @@
+.activities {
+  @include default;
+  h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
+ .text{
+    .file{
+        display: flex;
+        i{
+            padding-right: 10px;
+        }
+    }
+ }
+  .gallery {
+    padding: 20px 0;
+
+    .container {
+      width: 95%;
+      max-width: 1160px;
+      margin: auto;
+      .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "item1 item1 item2 item3"
+          "item4 item4 item2 item5"
+          "item4 item4 item2 item6";
+        grid-gap: 10px;
+        .item {
+          background-repeat: no-repeat !important;
+          background-size: cover !important;
+          background-position: center !important;
+          min-height: 12rem;
+          cursor: pointer;
+          background: red;
+          border-radius: 10px;
+        }
+        .item1 {
+          grid-area: item1;
+          background: url(../../media/sport1.jpg);
+          background-position: down !important;
+        }
+        .item2 {
+          grid-area: item2;
+          background: url(../../media/sport2.jpg);
+        }
+        .item3 {
+          grid-area: item3;
+          background: url(../../media/item3.jpg);
+        }
+        .item4 {
+          grid-area: item4;
+          background: url(../../media/item1.jpg);
+        }
+        .item5 {
+          grid-area: item5;
+          background: url(../../media/slider1.jpg);
+        }
+
+        .item6 {
+          grid-area: item6;
+          background: url(../../media/slider2.jpg);
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "item1 item1 item2"
+        "item3 item4 item2"
+        "item5 item6 item2";
+    }
+  }
+  @media (max-width: 620px) {
+    .grid-gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "item1 item3"
+        "item2 item4"
+        "item2 item5"
+        "item2 item6";
+    }
+  }
+  @media (max-width: 360px) {
+    .grid-gallery {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6";
+    }
+    .item2 {
+      background-position: top;
+    }
+  }
+}
+
+.photo-container {
+    border-radius: 15px;
+    margin-top: 50px;
+  
+    img {
+      width: auto;
+      border-radius: 15px;
+    }
+    .react-slideshow-fadezoom-images-wrap {
+      height: 800px;
+    }
+  }
+  
