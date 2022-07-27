@@ -25,8 +25,12 @@
   }
   .allLinks {
     // background-color: $color-3;
+    display: flex;
     *{
       margin: 0 10px
+    }
+    @media screen and (max-width: 1050px) {
+      display: block;
     }
   }
   .contact {
@@ -38,4 +42,8 @@
   .signature {
     // background-color: $color-1;
   }
+}
+
+@media screen and (max-width: 1050px) {
+ 
 }

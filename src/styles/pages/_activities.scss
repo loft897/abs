@@ -26,6 +26,25 @@
           "item1 item1 item2 item3"
           "item4 item4 item2 item5"
           "item4 item4 item2 item6";
+          @media (max-width: 900px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+              "item1 item2"
+              "item3 item4"
+              "item5 item6";
+          }
+          @media (max-width: 580px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+              "item1" 
+              "item2"
+              "item3"
+              "item4"
+              "item5"
+              "item6";
+          }
         grid-gap: 10px;
         .item {
           background-repeat: no-repeat !important;
@@ -65,41 +84,6 @@
       }
     }
   }
-  @media (max-width: 768px) {
-    .grid-gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        "item1 item1 item2"
-        "item3 item4 item2"
-        "item5 item6 item2";
-    }
-  }
-  @media (max-width: 620px) {
-    .grid-gallery {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "item1 item3"
-        "item2 item4"
-        "item2 item5"
-        "item2 item6";
-    }
-  }
-  @media (max-width: 360px) {
-    .grid-gallery {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6";
-    }
-    .item2 {
-      background-position: top;
-    }
-  }
 }
 
 .photo-container {
@@ -111,7 +95,12 @@
       border-radius: 15px;
     }
     .react-slideshow-fadezoom-images-wrap {
-      height: 800px;
+      height: 100%;
+    }
+    @media (max-width: 600px) {
+      .react-slideshow-fadezoom-images-wrap {
+        height: 500px;
+      }
     }
   }
   

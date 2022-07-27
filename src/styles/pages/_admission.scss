@@ -48,4 +48,13 @@
       border-radius: 10px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .prices{
+      grid-gap: 5px;
+      .cell{
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

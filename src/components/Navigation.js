@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../media/logo_abs.gif";
+// import Meteo from "./Meteo";
 
 const Navigation = () => {
   return (
@@ -15,6 +16,7 @@ const Navigation = () => {
             </div>
             <div className="name">
               <h1>AWAE BILINGUAL NURSERY AND PRIMARY SCHOOL</h1>
+          {/* <Meteo /> */}
             </div>
           </div>
           <div className="motto">

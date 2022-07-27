@@ -40,10 +40,39 @@
       margin: 15px;
       border: none;
     }
+
+    button{
+      margin: 15px auto;
+      &:hover {
+        background: linear-gradient(to left, green, white, green, white, green);
+      }
+    }
     textarea {
       border-radius: 10px;
       font-size: 1.2rem;
       outline: 0px none transparent;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 1rem;
+      form {
+        //   justify-content: center;
+        display: inline-block;
+        //   align-items: center;
+        div {
+          display: flex;
+        }
+      }
+
+      input,
+      button {
+        height: 30px;
+        font-size: 1rem;
+      }
+      textarea {
+        font-size: 1rem;
+        width: 100%;
+      }
     }
   }
 
